@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "id": "interaction",
+  "name": "Más interacción",
+  "reference": "interaction",
+  "cards": [
+    {
+      "id": "food",
+      "name": "Comida",
+      "copies": 18,
+      "text": "Agrega comida 1; alimenta una glotona y roba una carta.",
+      "effects": [
+        {
+          "op": "feed",
+          "kind": "glutton",
+          "resource": "food",
+          "amount": 1
+        }
+      ],
+      "flavor": "Otra porción. Por razones científicas.",
+      "category": "resource",
+      "cost": {},
+      "requirements": {},
+      "targets": "own",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [],
+      "modules": [],
+      "limit": 0
+    },
+    {
+      "id": "study",
+      "name": "Estudio",
+      "copies": 18,
+      "text": "Agrega estudio 1; alimenta una estudiosa.",
+      "effects": [
+        {
+          "op": "feed",
+          "kind": "scholar",
+          "resource": "study",
+          "amount": 1
+        }
+      ],
+      "flavor": "La bibliografía también se mastica.",
+      "category": "resource",
+      "cost": {},
+      "requirements": {},
+      "targets": "own",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [],
+      "modules": [],
+      "limit": 0
+    },
+    {
+      "id": "chaos",
+      "name": "Hierba de la loca",
+      "copies": 18,
+      "text": "Agrega caos 1; alimenta una loca y resuelve su tabla.",
+      "effects": [
+        {
+          "op": "feed",
+          "kind": "crazy",
+          "resource": "chaos",
+          "amount": 1
+        }
+      ],
+      "flavor": "Has entendido todo. Casi.",
+      "category": "resource",
+      "cost": {},
+      "requirements": {},
+      "targets": "own",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [],
+      "modules": [],
+      "limit": 0
+    },
+    {
+      "id": "raid",
+      "name": "Saqueo",
+      "copies": 14,
+      "text": "Roba una bebé o un recurso. Si funciona, genera maldad 1 y activa una malvada.",
+      "effects": [
+        {
+          "op": "steal",
+          "key": "raid"
+        }
+      ],
+      "flavor": "La vida en el altiplano nunca fue tan tranquila.",
+      "category": "attack",
+      "cost": {},
+      "requirements": {},
+      "targets": "pair",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [
+        "alarm"
+      ],
+      "modules": [],
+      "limit": 0
+    },
+    {
+      "id": "explosion",
+      "name": "Explosión",
+      "copies": 10,
+      "text": "Todos reemplazan la mano restante. Activa solo una explosiva propia.",
+      "effects": [
+        {
+          "op": "explosion"
+        }
+      ],
+      "flavor": "Estaba así cuando llegué.",
+      "category": "event",
+      "cost": {},
+      "requirements": {},
+      "targets": "own",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [],
+      "modules": [],
+      "limit": 0
+    },
+    {
+      "id": "spit",
+      "name": "Escupir",
+      "copies": 8,
+      "text": "Paga caos 1 o bomba 1. Una adulta rival vuelve a joven conservando recursos.",
+      "effects": [
+        {
+          "op": "age",
+          "amount": -1,
+          "target": "enemy"
+        }
+      ],
+      "flavor": "La vida en el altiplano nunca fue tan tranquila.",
+      "category": "attack",
+      "cost": {
+        "chaos": 1
+      },
+      "requirements": {},
+      "targets": "enemy",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [
+        "alarm"
+      ],
+      "modules": [],
+      "limit": 0
+    },
+    {
+      "id": "conversion",
+      "name": "Conversión",
+      "copies": 4,
+      "text": "Paga maldad 2. Roba una joven o adulta; conserva edad y pierde recursos.",
+      "effects": [
+        {
+          "op": "steal",
+          "key": "conversion"
+        }
+      ],
+      "flavor": "La vida en el altiplano nunca fue tan tranquila.",
+      "category": "attack",
+      "cost": {
+        "evil": 2
+      },
+      "requirements": {},
+      "targets": "enemy",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [
+        "alarm"
+      ],
+      "modules": [],
+      "limit": 0
+    },
+    {
+      "id": "alarm",
+      "name": "Alarma de llama",
+      "copies": 6,
+      "text": "Descarta para cancelar un ataque a tu grupo o mano. No cancela explosiones globales.",
+      "effects": [],
+      "flavor": "La vida en el altiplano nunca fue tan tranquila.",
+      "category": "reaction",
+      "cost": {},
+      "requirements": {},
+      "targets": "none",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [
+        "attack"
+      ],
+      "modules": [],
+      "limit": 0
+    },
+    {
+      "id": "farm",
+      "name": "Granja especializada",
+      "copies": 2,
+      "text": "Estudiosa adulta + estudio 2. Roba una carta extra al inicio de tus siguientes turnos.",
+      "effects": [
+        {
+          "op": "install",
+          "key": "farm"
+        }
+      ],
+      "flavor": "La vida en el altiplano nunca fue tan tranquila.",
+      "category": "research",
+      "cost": {
+        "study": 2
+      },
+      "requirements": {
+        "kind": "scholar",
+        "adults": 1
+      },
+      "targets": "none",
+      "triggers": [],
+      "duration": "permanent",
+      "reactionWindows": [],
+      "modules": [],
+      "limit": 1
+    },
+    {
+      "id": "fence",
+      "name": "Valla eléctrica",
+      "copies": 2,
+      "text": "Estudiosa adulta + estudio 2. Robar una llama exige dos cartas iguales del ataque.",
+      "effects": [
+        {
+          "op": "install",
+          "key": "fence"
+        }
+      ],
+      "flavor": "La vida en el altiplano nunca fue tan tranquila.",
+      "category": "research",
+      "cost": {
+        "study": 2
+      },
+      "requirements": {
+        "kind": "scholar",
+        "adults": 1
+      },
+      "targets": "none",
+      "triggers": [],
+      "duration": "permanent",
+      "reactionWindows": [],
+      "modules": [],
+      "limit": 1
+    },
+    {
+      "id": "meditate",
+      "name": "Llamitas meditando",
+      "copies": 4,
+      "text": "Programa un turno extra completo; solo uno por turno normal, nunca desde un extra.",
+      "effects": [
+        {
+          "op": "extra"
+        }
+      ],
+      "flavor": "La vida en el altiplano nunca fue tan tranquila.",
+      "category": "event",
+      "cost": {},
+      "requirements": {},
+      "targets": "none",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [],
+      "modules": [
+        "interaction"
+      ],
+      "limit": 0
+    },
+    {
+      "id": "reject",
+      "name": "Rechazo llamístico",
+      "copies": 4,
+      "text": "Devuelve una bebé rival a la reserva. Alarma puede bloquear.",
+      "effects": [
+        {
+          "op": "return"
+        }
+      ],
+      "flavor": "La vida en el altiplano nunca fue tan tranquila.",
+      "category": "attack",
+      "cost": {},
+      "requirements": {},
+      "targets": "enemy",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [
+        "alarm"
+      ],
+      "modules": [
+        "interaction"
+      ],
+      "limit": 0
+    },
+    {
+      "id": "handTheft",
+      "name": "Robo de cartas",
+      "copies": 6,
+      "text": "Maldad 1: roba una carta al azar. Con estudio 1 adicional, mira y elige.",
+      "effects": [
+        {
+          "op": "steal",
+          "key": "hand"
+        }
+      ],
+      "flavor": "La vida en el altiplano nunca fue tan tranquila.",
+      "category": "attack",
+      "cost": {
+        "evil": 1
+      },
+      "requirements": {},
+      "targets": "enemy",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [
+        "alarm"
+      ],
+      "modules": [
+        "interaction"
+      ],
+      "limit": 0
+    },
+    {
+      "id": "sound",
+      "name": "Sonido de llama",
+      "copies": 2,
+      "text": "Una acción social sin efecto material ni micrófono.",
+      "effects": [
+        {
+          "op": "social"
+        }
+      ],
+      "flavor": "Mmmprrr. Elocuente.",
+      "category": "event",
+      "cost": {},
+      "requirements": {},
+      "targets": "none",
+      "triggers": [],
+      "duration": "turn",
+      "reactionWindows": [],
+      "modules": [
+        "interaction"
+      ],
+      "limit": 0
+    }
+  ],
+  "rules": [
+    {
+      "id": "growth.global",
+      "description": "Una sola subida de edad entre todas tus llamas por turno. Seguir alimentando es legal.",
+      "status": "confirmed",
+      "source": "§4.1"
+    },
+    {
+      "id": "growth.activation",
+      "description": "Bebé → joven especializada → adulta. Recursos almacenados no crecen solos y gastarlos no rejuvenece.",
+      "status": "confirmed",
+      "source": "§4.1"
+    },
+    {
+      "id": "victory.simultaneous",
+      "description": "La victoria exige adultas simultáneas, nunca un total histórico.",
+      "status": "confirmed",
+      "source": "§4.3"
+    },
+    {
+      "id": "explosion.owner",
+      "description": "Solo la explosiva elegida por el dueño de la explosión puede crecer.",
+      "status": "confirmed",
+      "source": "§4.2"
+    },
+    {
+      "id": "evil.activation",
+      "description": "Solo robar una bebé o un recurso con éxito activa malvada; robar cartas no.",
+      "status": "confirmed",
+      "source": "§4.2"
+    },
+    {
+      "id": "baby.compatibility",
+      "description": "Una bebé solo recibe una especialización cuando tiene permiso para crecer.",
+      "status": "provisional",
+      "source": "§5"
+    },
+    {
+      "id": "turn.order",
+      "description": "Incorporación opcional → robo → acciones libres → fin voluntario. Una bebé gratis por turno.",
+      "status": "provisional",
+      "source": "§5"
+    },
+    {
+      "id": "cost.herd",
+      "description": "Paga desde cualquier llama propia, eligiendo las fuentes. Recursos no negativos.",
+      "status": "provisional",
+      "source": "§5"
+    },
+    {
+      "id": "victory.atomic",
+      "description": "Se comprueba victoria tras cada efecto atómico y su ventana preventiva.",
+      "status": "provisional",
+      "source": "§5"
+    },
+    {
+      "id": "research.persistence",
+      "description": "Granja y Valla son únicas; por defecto persisten al perder estudiosa.",
+      "status": "provisional",
+      "source": "§6.1"
+    },
+    {
+      "id": "chaos.table",
+      "description": "Tabla de seis resultados con pesos editables; regalos no alimentan. Robo de loca sin Alarma por defecto.",
+      "status": "experimental",
+      "source": "§6.3"
+    },
+    {
+      "id": "holy.route",
+      "description": "Santa no cuenta para ganar ni coexiste con malvada. Bendición se suspende sin santa adulta.",
+      "status": "experimental",
+      "source": "§7.1"
+    },
+    {
+      "id": "powers.routes",
+      "description": "Poderosas: dos copias, una activación por jugador; cartas usadas fuera del circuito.",
+      "status": "experimental",
+      "source": "§7"
+    },
+    {
+      "id": "laboratory.variants",
+      "description": "Mercado, anuncio con vuelta de espera, explosión extra y reciclaje diferido son opciones separadas.",
+      "status": "experimental",
+      "source": "§8"
+    }
+  ],
+  "initialHand": 6,
+  "draw": 2,
+  "target": 5,
+  "initialLlamas": 0,
+  "reserve": null,
+  "groupLimit": null,
+  "handLimit": null,
+  "gluttonYoung": 1,
+  "gluttonAdult": 1,
+  "farmDraw": 1,
+  "fenceCopies": 2,
+  "meditation": "extra",
+  "rejectionCost": 0,
+  "market": false,
+  "announce": false,
+  "explosionExtra": false,
+  "deferredFeed": false,
+  "autoEvents": false,
+  "researchPersists": true,
+  "crazyProtected": false,
+  "chaosWeights": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "blessingPerLlama": 1,
+  "banquetPerLlama": 1,
+  "thesisRecovery": 1,
+  "allowRecoverAside": false
+}
