@@ -1,0 +1,26 @@
+{
+  "format": "llamas-card",
+  "version": 1,
+  "card": {
+    "id": "dosIdeas",
+    "name": "Dos ideas brillantes",
+    "copies": 2,
+    "text": "Roba dos cartas.",
+    "effects": [
+      {
+        "op": "draw",
+        "amount": 2
+      }
+    ],
+    "flavor": "Mmmprrr. Elocuente.",
+    "category": "event",
+    "cost": {},
+    "requirements": {},
+    "targets": "none",
+    "triggers": [],
+    "duration": "turn",
+    "reactionWindows": [],
+    "modules": [],
+    "limit": 0
+  }
+}

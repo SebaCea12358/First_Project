@@ -1,0 +1,31 @@
+preset,fingerprint,seed,rotation,winner,profile,status,turns,actions,events,milliseconds,attacks,blocked,successfulAttacks,powersActivated,growth,leaderChanges,exploratory,snapshot
+"Base de trabajo","1d89ea9d","lote-0",0,2,"researcher","completed",51,252,1576,939.080858,57,9,51,0,51,10,false,false
+"Base de trabajo","1d89ea9d","lote-0",1,2,"breeder","completed",33,157,838,348.70993799999997,26,6,23,0,33,4,false,false
+"Base de trabajo","1d89ea9d","lote-0",2,0,"researcher","completed",37,183,1008,564.680343,32,7,30,0,36,3,false,false
+"Base de trabajo","1d89ea9d","lote-1",0,2,"researcher","completed",39,192,1114,580.2084550000002,37,5,33,0,39,1,false,false
+"Base de trabajo","1d89ea9d","lote-1",1,1,"researcher","completed",38,193,1129,726.9538849999999,44,9,36,0,38,3,false,false
+"Base de trabajo","1d89ea9d","lote-1",2,0,"researcher","completed",28,137,766,298.0674979999999,22,7,17,0,28,3,false,false
+"Más interacción","662abef","lote-0",0,0,"breeder","completed",50,242,1276,841.864509,49,6,47,0,49,13,false,false
+"Más interacción","662abef","lote-0",1,1,"researcher","completed",52,256,1349,757.0687629999993,64,8,59,0,52,7,false,false
+"Más interacción","662abef","lote-0",2,1,"breeder","completed",28,149,848,265.61027099999956,23,6,20,0,28,2,false,false
+"Más interacción","662abef","lote-1",0,1,"aggressive","completed",32,153,798,283.42008799999985,39,4,37,0,32,3,false,false
+"Más interacción","662abef","lote-1",1,1,"researcher","completed",34,169,920,448.1387940000004,33,5,31,0,34,5,false,false
+"Más interacción","662abef","lote-1",2,2,"aggressive","completed",40,193,1033,440.52510900000016,44,8,39,0,40,7,false,false
+"Ruta santa","89d95a27","lote-0",0,2,"researcher","completed",44,215,1158,591.1797239999996,37,9,29,1,44,3,false,false
+"Ruta santa","89d95a27","lote-0",1,2,"breeder","completed",40,200,1086,621.0985900000005,48,6,47,0,40,4,false,false
+"Ruta santa","89d95a27","lote-0",2,0,"researcher","completed",52,249,1352,814.5180490000002,52,10,45,0,51,9,false,false
+"Ruta santa","89d95a27","lote-1",0,2,"researcher","completed",52,265,1510,915.7052519999997,64,6,60,0,50,7,false,false
+"Ruta santa","89d95a27","lote-1",1,1,"researcher","completed",43,219,1303,682.1471649999985,37,8,32,1,44,7,false,false
+"Ruta santa","89d95a27","lote-1",2,1,"breeder","completed",42,199,1130,518.0092910000003,30,6,26,1,42,2,false,false
+"Rutas alternativas","9fc7c647","lote-0",0,1,"aggressive","completed",29,130,705,302.6223659999996,22,4,18,0,28,2,false,false
+"Rutas alternativas","9fc7c647","lote-0",1,2,"breeder","completed",51,238,1297,818.6455419999984,42,8,37,1,50,4,false,false
+"Rutas alternativas","9fc7c647","lote-0",2,1,"breeder","completed",26,145,832,258.92299599999933,23,7,19,1,30,1,false,false
+"Rutas alternativas","9fc7c647","lote-1",0,1,"aggressive","completed",41,190,994,537.7788939999991,29,8,23,0,40,6,false,false
+"Rutas alternativas","9fc7c647","lote-1",1,0,"aggressive","completed",36,165,929,368.3464519999998,22,7,17,2,35,3,false,false
+"Rutas alternativas","9fc7c647","lote-1",2,1,"breeder","completed",41,205,1232,654.3325679999998,43,6,38,2,46,8,false,false
+"Recompensas visibles","81eb1b2e","lote-0",0,0,"breeder","completed",21,122,722,240.345147,19,4,19,2,24,1,false,false
+"Recompensas visibles","81eb1b2e","lote-0",1,1,"researcher","completed",36,186,1004,487.7448339999992,36,6,34,1,35,4,false,false
+"Recompensas visibles","81eb1b2e","lote-0",2,0,"researcher","completed",37,188,997,426.90695699999924,43,9,36,1,37,4,false,false
+"Recompensas visibles","81eb1b2e","lote-1",0,0,"breeder","completed",45,218,1238,662.4460259999996,44,7,40,1,44,5,false,false
+"Recompensas visibles","81eb1b2e","lote-1",1,0,"aggressive","completed",35,168,983,367.776296,30,4,28,1,35,2,false,false
+"Recompensas visibles","81eb1b2e","lote-1",2,0,"researcher","completed",23,110,594,175.8223109999999,20,4,16,0,23,0,false,false
